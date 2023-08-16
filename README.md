@@ -5,7 +5,7 @@ Anonymize sensitive data in your datasets. It generates pseudonyms for specified
 ## How It Works
 
 - Load or Generate Secret Key (if not exist)
-- Process Input Data File:
+- Process Input Data File
 - Data Pseudonymization or Reversion
 - Encrypted Mapping Files
   - During the 'anonymize' operation, for each specified column, the script creates an encrypted file that maps the pseudonyms back to the original data.
