@@ -45,7 +45,7 @@ python3 data.py
 python3 anonymizer.py data.csv anonymize --key_path secret_key.key
 ```
 
-![data!](anonymized.png)
+![anonymized!](anonymized.png)
 
 3. Revert
 
@@ -53,5 +53,5 @@ python3 anonymizer.py data.csv anonymize --key_path secret_key.key
 python3 anonymizer.py data.csv revert --key_path secret_key.key
 ```
 
-![data!](anonymized.png)
+![reverted!](reverted.png)
 
