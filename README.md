@@ -1,6 +1,6 @@
 # Data Anonymizer
 
-Anonymize sensitive data in your datasets. It generates pseudonyms for specified columns in a CSV file using a salted SHA-256 hashing function. The script allows for reverting the data back to its original form using encrypted mapping files that are generated during the anonymization process.
+Anonymize sensitive data in your datasets. It generates pseudonyms for specified columns in a CSV file using a salted SHA-256 hashing function. Integrity checks with HMAC. The script allows for reverting the data back to its original form using encrypted mapping files that are generated during the anonymization process.
 
 ## How It Works
 
