@@ -8,7 +8,7 @@ Anonymize sensitive data in your datasets. It generates pseudonyms for specified
 - Process Input Data File
 - Data Pseudonymization or Reversion
 - Encrypted Mapping Files
-  - During the 'anonymize' operation, for each specified column, the script creates an encrypted file that maps the pseudonyms back to the original data.
+  - During the ```anonymize``` operation, for each specified column, the script creates an encrypted file that maps the pseudonyms back to the original data.
   - These mapping files are encrypted using the Fernet symmetric encryption scheme, and an HMAC is appended to ensure data integrity.
 - Data Integrity
   - When reverting data, the script first checks the integrity of the encrypted mapping files by comparing a stored HMAC with a computed HMAC.
@@ -26,8 +26,8 @@ pip3 install -r requirements.txt
 python3 anonymizer.py file_path operation --cols column_names --key_path secret_key_path
 ```
 - file_path: Path to the data file (CSV format)
-- operation: 'anonymize' or 'revert'
-- --cols: Specific columns to anonymize or revert (default is all columns)
+- operation: ```anonymize``` or ```revert```
+- --cols: Specific columns to anonymize or revert (all columns by default)
 - --key_path: Path to the secret key file (required)
 
 ## Usage Example
