@@ -59,4 +59,4 @@ python3 anonymizer.py data.csv revert --key_path secret_key.key
 ## Security
 
 - **Secret Key Storage** - ensure the secret key file is stored securely. If compromised, an attacker could decrypt the pseudonym mappings and de-anonymize the data.
-- **Encrypted Mapping Files** - Access to these files and the secret key allows data de-anonymization. Ensure that these files are stored in a secure location with restricted access.
+- **Encrypted Mapping Files** - ensure that these files are stored in a secure location with restricted access. Access to these files and the secret key allows data de-anonymization. 
