@@ -26,10 +26,10 @@ pip3 install -r requirements.txt
 ```bash
 python3 anonymizer.py file_path operation --cols column_names --key_path secret_key_path
 ```
-- file_path: Path to the data file (CSV format)
-- operation: ```anonymize``` or ```revert```
-- --cols: Specific columns to anonymize or revert (all columns by default)
-- --key_path: Path to the secret key file (required)
+- **file_path:** Path to the data file (CSV format)
+- **operation:** ```anonymize``` or ```revert```
+- **--cols:** Specific columns to anonymize or revert (all columns by default)
+- **--key_path:** Path to the secret key file (required)
 
 ## Usage Example
 
