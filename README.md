@@ -5,6 +5,7 @@ Anonymize sensitive data in your datasets. It generates pseudonyms for specified
 ## How It Works
 
 - Load or Generate Secret Key (if not exist)
+  - Key should be base64-encoded 32 bytes (256 bits) long
 - Process Input Data File
 - Data Pseudonymization or Reversion
 - Encrypted Mapping Files
@@ -57,5 +58,5 @@ python3 anonymizer.py data.csv revert --key_path secret_key.key
 
 ## Security
 
-- **Secure the Secret Key File** - ensure the secret key file is stored securely. If compromised, an attacker could decrypt the pseudonym mappings and de-anonymize the data.
-- **Protect the Encrypted Mapping Files** - Access to these files and the secret key allows data de-anonymization. Ensure that these files are stored in a secure location with restricted access.
+- **Secret Key Storage** - ensure the secret key file is stored securely. If compromised, an attacker could decrypt the pseudonym mappings and de-anonymize the data.
+- **Encrypted Mapping Files** - Access to these files and the secret key allows data de-anonymization. Ensure that these files are stored in a secure location with restricted access.
